@@ -1,0 +1,117 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #87CEEB; /* Azul claro */
+    color: #1e1b1b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    font-size: 3vw;
+    color: rgb(3, 0, 0);
+}
+
+#game-container {
+    width: 80%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Faz a sala crescer conforme o conteúdo */
+#room {
+    width: 100%;
+    min-height: 400px; /* Em vez de altura fixa, um mínimo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #fff; /* Garante que o fundo fique branco */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.object {
+    background-color: #b0e0e6; /* Azul pastel */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 2vw;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #1e1b1b;
+    text-align: center;
+}
+
+.object:hover {
+    background-color: #87cefa;
+}
+
+#codeInput {
+    width: 70%;
+    padding: 10px;
+    margin-top: 20px; /* Ajustado para não quebrar o layout */
+    font-size: 4vw;
+    border-radius: 10px;
+    border: 2px solid #1e1b1b;
+    text-align: center;
+    background-color: #e0f7fa;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 4vw;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1vh;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #005b99;
+}
+
+#message {
+    margin-top: 2vh;
+    font-size: 4vw;
+    color: black;
+    font-weight: bold;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    #room {
+        min-height: 300px; /* Ajusta para telas pequenas */
+    }
+    .object {
+        font-size: 3vw;
+    }
+}

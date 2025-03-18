@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A nossa Escape Room3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>A nossa Escape Room 💖🐧</h1>
+        <p>Resolve os desafios!</p>
+        <img src="/room-4779953_640.jpg" alt="Escape Room" style="width: 100%;">
+        
+        
+        <div id="room">
+            <p>🔐 Desafio 1: O Código do Cadeado<br>
+                📜 Encontras-te uma carta antiga escondida no chão da sala. Tem instruções para procurares uma caixa com um cadeado atrás da porta. Depois segue-se um enigma:
+                "Se multiplicares os dedos de uma mão pelos olhos de um pinguim, terás o segredo para abrir o cadeado."</p>
+            <div class="object" data-code="0010">🔐 Cadeado</div>
+            
+            <p>📦 Desafio 2: O Mistério da Caixa<br>
+                    📜 Ao abrir o cadeado da caixa, viste que dentro tinha outra pista. Este diz:
+                    "Sob algo onde se senta, um segredo repousa. O dobro dos números ímpares te levará ao tesouro." Procura depois a tua última pista no armário da sala.</p>
+            <div class="object" data-code="2610">📦 Caixa suspeita</div>
+            
+            <p>🚪 Desafio 3: A Porta do Armário Trancada<br>
+                    📜 Na porta do armário trancada parece que tem um simbolo de soma riscado ao de leve na dobradiça da porta. </p>
+            <div class="object" data-code="2620">🚪 Porta do armário</div>
+            
+        </div>
+        <input type="text" id="codeInput" placeholder="Código de 4 dígitos">
+        <button onclick="checkCode()">Confirmar</button>
+    
+        <p id="message"></p>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
